@@ -24,10 +24,15 @@ int main()
     const int MONTHS = 4;
     
     // arrays
-    int recipes[MAX][MAX]{{}};
-    int prices[MAX][MONTHS]{{}};
-    int costs[MAX][MAX]{{}};
-    string products[MAX]{};
+//    int recipes[MAX][MAX]{{}};
+//    int prices[MAX][MONTHS]{{}};
+//    int costs[MAX][MAX]{{}};
+//    string products[MAX]{};
+    
+    int recipes[MAX][MAX];
+    int prices[MAX][MONTHS];
+    int costs[MAX][MAX];
+    string products[MAX];
     
     // file streams
     ifstream pricesFile;
@@ -35,9 +40,9 @@ int main()
     ifstream ingredsFile;
     
     // open all three input files
-    pricesFile.open("/Users/migration/Desktop/xCode/discrete/lab1/lab1/prices.dat");
-    productsFile.open("/Users/migration/Desktop/xCode/discrete/lab1/lab1/products.dat");
-    ingredsFile.open("/Users/migration/Desktop/xCode/discrete/lab1/lab1/ingredients.dat");
+    pricesFile.open("./prices.dat");
+    productsFile.open("./products.dat");
+    ingredsFile.open("./ingredients.dat");
  
     // test to see that all three input files are open, output error message if not open
     if (productsFile.is_open())
