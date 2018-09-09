@@ -1,2 +1,12 @@
 # 3080
-Course work from my CSCI 3080 class.
+
+## description
+
+**lab1** 
+
+**lab2** 
+
+**lab3** 
+
+**lab4** 
+
